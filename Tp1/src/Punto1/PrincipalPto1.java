@@ -89,8 +89,7 @@ public class PrincipalPto1 {
 		System.out.println("4) Mostrar Libro con menos hojas");
 		System.out.println("5) Buscar libro por código ISBN");
 		System.out.println("6) Salir");
-		System.out.println("Seleccione una opción: ");
-		return input.nextInt();
+		return Helper.validarEntero(input, "Seleccione una opción: ");
     }
     
     public static Libro crearLibro(String mensaje) {
